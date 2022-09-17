@@ -1,5 +1,327 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="applicable-device" content="mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="author" content="18782929253@163.com" />
+    <meta name="force-rendering" content="webkit" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="renderer" content="webkit" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <title>淳杨乔-个人简历</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @media print {
+        .work-item {
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
   <body>
-    <h1>Hello, World!</h1>
+    <section id="profile">
+      <p class="name">淳杨乔</p>
+      <p class="reference">男 / 1992 / 前端开发</p>
+      <div class="contact">
+        <!-- 电话 -->
+        <div class="phone-wrapper">
+          <svg
+            class="icon-phone"
+            width="20px"
+            height="15px"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#42b883"
+              d="M736 0l-448 0c-52.8 0-96 43.2-96 96l0 832c0 52.8 43.2 96 96 96l448 0c52.8 0 96-43.2 96-96l0-832c0-52.8-43.2-96-96-96zM384 48l256 0 0 32-256 0 0-32zM512 960c-35.36 0-64-28.64-64-64s28.64-64 64-64 64 28.64 64 64-28.64 64-64 64zM768 768l-512 0 0-640 512 0 0 640z"
+            />
+          </svg>
+          <a href="tel:18782929253" class="mobile">18782929253</a>
+        </div>
+        <!-- 邮箱 -->
+        <div class="email-wrapper">
+          <svg
+            class="icon-email"
+            width="20px"
+            height="20px"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#42b883"
+              d="M874.666667 375.189333V746.666667a64 64 0 0 1-64 64H213.333333a64 64 0 0 1-64-64V375.189333l266.090667 225.6a149.333333 149.333333 0 0 0 193.152 0L874.666667 375.189333zM810.666667 213.333333a64.789333 64.789333 0 0 1 22.826666 4.181334 63.616 63.616 0 0 1 26.794667 19.413333 64.32 64.32 0 0 1 9.344 15.466667c2.773333 6.570667 4.48 13.696 4.906667 21.184L874.666667 277.333333v21.333334L553.536 572.586667a64 64 0 0 1-79.893333 2.538666l-3.178667-2.56L149.333333 298.666667v-21.333334a63.786667 63.786667 0 0 1 35.136-57.130666A63.872 63.872 0 0 1 213.333333 213.333333h597.333334z"
+            />
+          </svg>
+          <a href="mailto:18782929253@163.com" class="email"
+            >18782929253@163.com</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- 工作经历 -->
+    <main class="work">
+      <h1 class="title-wrapper">
+        <div class="title">工作经历</div>
+        <div class="title-placeholder"></div>
+      </h1>
+      <!-- 中建 -->
+      <section class="work-item">
+        <div class="company">
+          <div class="company-wrapper">
+            <div>
+              <a class="company-name" href="https://www.yzw.cn"
+                >中建电子商务有限责任公司</a
+              >
+              <div class="job-name">移动端开发工程师</div>
+            </div>
+            <div class="work-time">2020.09 ~ 至今</div>
+          </div>
+          <div class="teches">
+            <span class="tech">React</span>
+            <span class="tech">React Native</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">Typescript</span>
+          </div>
+        </div>
+        <div class="project">
+          <h2 class="project-name">即时通讯</h2>
+          <ul class="project-content">
+            <li class="project-content-item">
+              负责即时通讯中<span class="space">SDK</span
+              >的设计/开发。以插件化的形式解耦<span class="space">SDK</span
+              >各个功能模块, 使<span class="space">SDK</span
+              >的使用/维护更加灵活方便。
+              <br />
+              <span
+                >使用<span class="space">Mono repo</span>的方式(Lerna)进行<span
+                  class="space"
+                  >package</span
+                >管理</span
+              >
+            </li>
+            <li class="project-content-item">
+              完成基于<span class="space">SDK</span>的<span class="space"
+                >React Native</span
+              >组件和<span class="space">Web</span>端组件库的建设。
+            </li>
+            <li class="project-content-item">
+              为
+              <a
+                href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E9%9B%86%E9%87%87/id1488054864"
+                class="app-link"
+                >云筑集采</a
+              >/<a
+                href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E8%9C%9C%E8%9C%82/id1604733781"
+                class="app-link"
+                >云筑蜜蜂</a
+              >
+              两款<span class="space">App</span>及<span class="space">Web</span
+              >端聊天的<span class="space">SDK</span> 集成提供技术支撑
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h2 class="project-name">移动端热更新</h2>
+          <ul class="project-content">
+            <li class="project-content-item">热更新方案/流程设计</li>
+            <li class="project-content-item">
+              编写<span class="space">Babel</span
+              >插件对每次更新包代码进行模块提取/解析/对比
+            </li>
+            <li class="project-content-item">
+              热更新服务端开发。提供代码包上传，模块分析/提取 以及代码下载等功能
+            </li>
+            <li class="project-content-item">
+              在<span class="space">Gitlab-CI</span>中集成热更新模块的打包及上传
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h2 class="project-name">RN组件库</h2>
+          <ul class="project-content">
+            <li class="project-content-item">组件开发/单元测试</li>
+            <li class="project-content-item">
+              编写<span class="space">CLI</span>
+              工具,方便日常工作中模块的快速开发
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h2 class="project-name">
+            <a
+              href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E9%9B%86%E9%87%87/id1488054864"
+              class="project-app-title"
+              >云筑集采</a
+            >/<a
+              href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E8%9C%9C%E8%9C%82/id1604733781"
+              class="project-app-title"
+              >云筑蜜蜂</a
+            >
+          </h2>
+          <ul class="project-content">
+            <li class="project-content-item">
+              两款<span class="space">App</span> 的日常业务开发
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 中天 -->
+      <section class="work-item">
+        <div class="company">
+          <div class="company-wrapper">
+            <div>
+              <a class="company-name">中天智慧科技有限公司</a>
+              <div class="job-name">前端开发工程师</div>
+            </div>
+            <div class="work-time">2018.03 ~ 2020.08</div>
+          </div>
+          <div class="teches">
+            <span class="tech">React</span>
+            <span class="tech">Node.js</span>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-name">天府商城</div>
+          <ul class="project-content">
+            <li class="project-content-item">
+              商品/订单/支付等多个2C模块的前端业务开发
+            </li>
+            <li class="project-content-item">
+              使用<span class="space">Webpack</span
+              >优化多页面中的资源重复引用的问题
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <div class="project-name">商户平台</div>
+          <ul class="project-content">
+            <li class="project-content-item">
+              商户结算/订单等多个模块的前端业务开发
+            </li>
+            <li class="project-content-item">
+              店铺装修模块进行改造升级,提高商户在装修时的用户体验
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 京北方 -->
+      <section class="work-item">
+        <div class="company">
+          <div class="company-wrapper">
+            <div>
+              <a class="company-name">京北方信息技术</a>
+              <div class="job-name">前端开发工程师</div>
+            </div>
+            <div class="work-time">2016.05 ~ 2018.02</div>
+          </div>
+          <div class="teches">
+            <span class="tech">jQuery</span>
+            <span class="tech">eCharts</span>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-name">金融数据可视化大屏</div>
+          <ul class="project-content">
+            <li class="project-content-item">
+              使用<span class="space">eCharts</span>
+              完成金融数据可视化大屏的开发
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <div class="project-name">数行微商城</div>
+          <ul class="project-content">
+            <li class="project-content-item">
+              商品/订单两大模块中多个前端页面开发
+            </li>
+            <li class="project-content-item">
+              使用<span class="space">Gulp</span>对前端资源进行压缩、混淆处理
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 中软 -->
+      <section class="work-item">
+        <div class="company">
+          <div class="company-wrapper">
+            <div>
+              <a class="company-name">中软国际</a>
+              <div class="job-name">前端开发工程师</div>
+            </div>
+            <div class="work-time">2015.03 ~ 2016.04</div>
+          </div>
+          <div class="teches">
+            <span class="tech">AngularJS</span>
+            <span class="tech">D3.js</span>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-name">ONOS网络控制器</div>
+          <ul class="project-content">
+            <li class="project-content-item">
+              可视化网络流量数据大屏的前端开发
+            </li>
+            <li class="project-content-item">
+              网络流量调优对比相关前端页面开发
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 教育经历 -->
+      <section class="education">
+        <h1 class="title-wrapper">
+          <div class="title">教育经历</div>
+          <div class="title-placeholder"></div>
+        </h1>
+        <div class="education-list">
+          <div class="education-list-item">
+            <div class="education-name">
+              <a href="http://www.cduestc.cn" class="university"
+                >电子科技大学成都学院</a
+              >
+              <div class="major">本科 - 通信工程</div>
+            </div>
+            <div class="education-time">2010.09 ~ 2014.06</div>
+          </div>
+        </div>
+      </section>
+      <!-- 自我评价 -->
+      <section class="self-evaluation">
+        <h1 class="title-wrapper">
+          <div class="title">自我评价</div>
+          <div class="title-placeholder"></div>
+        </h1>
+        <ul class="evaluation-wrapper">
+          <li class="evaluation-item">HTML/CSS/JavaScript基础扎实</li>
+          <li class="evaluation-item">目前会用的前端框架: React</li>
+          <li class="evaluation-item">目前会用的移动端框架: React Native</li>
+          <li class="evaluation-item">
+            目前接触过的<span class="space">Nodejs</span>框架: Nest.js
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
