@@ -8,9 +8,7 @@ html {
 }
 
 :root {
-  /* --them-color-primary: #37b24d; */
   --them-color-primary: #42b883;
-  /* --them-color-primary: #06f; */
   --text-color-primary: rgb(33, 37, 41);
   --text-color-sub: #868e96;
   --text-color-normal: #495057;
