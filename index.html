@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-Hans">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="chunyangqiao's profile">
+    <meta name="description" content="chunyangqiao's resume" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="applicable-device" content="mobile" />
@@ -28,8 +28,370 @@
     <meta name="x5-fullscreen" content="true" />
     <meta name="360-fullscreen" content="true" />
     <title>淳杨乔-个人简历</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+    </style>
+    <style>
+      body,html {
+        width: 100%;
+        height: 100%;
+      }
+
+      :root {
+        --them-color-primary: #004dc7;
+        --text-50: #eaf0fb;
+        --text-100: #d4e1f7;
+        --text-200: #a9c4ef;
+        --text-300: #7ea6e7;
+        --text-400: #5489de;
+        --text-500: #296bd6;
+        --text-600: #2156ab;
+        --text-700: #184081;
+        --text-800: #102b56;
+        --text-900: #08152b;
+        --text-950: #040b15;
+      }
+
+      #profile {
+        padding: 10px 20px;
+      }
+
+      #profile .reference {
+        font-size: 14px;
+        margin-left: 4px;
+        margin-bottom: 10px;
+      }
+
+      #profile .name {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--text-950);
+        padding: 14px 0;
+      }
+
+      .mobile,
+      .email {
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: none;
+      }
+
+      .contact {
+        display: flex;
+      }
+
+      .phone-wrapper {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+
+      .icon-phone,
+      .icon-email {
+        margin-right: 2px;
+      }
+
+      .email-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .work {
+        margin-top: 8px;
+      }
+
+      .title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title-wrapper .title {
+        color: var(--text-950);
+        font-size: 24px;
+        font-weight: 700;
+        padding: 10px 14px;
+      }
+
+      .title-placeholder {
+        height: 1px;
+        flex: 1;
+        background-color: #dee2e6;
+        margin-right: 16px;
+      }
+
+      .work-item {
+        padding: 0px 20px;
+      }
+
+      .company {
+        padding: 10px;
+      }
+
+      .company-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .company-name {
+        font-size: 16px;
+        color: var(--them-color-primary);
+        line-height: 32px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .work-time {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-500);
+        line-height: 22px;
+      }
+
+      .job-name {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: var(--text-800);
+      }
+
+      .teches {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .tech {
+        border: 1px solid #495057;
+        color: #495057;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 0px 7px;
+        margin-right: 5px;
+      }
+
+      .project {
+        padding: 10px;
+      }
+
+      .project-name {
+        color: var(--text-800);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        height: 21px;
+        margin-bottom: 5px;
+      }
+
+      .project-content {
+        padding-left: 20px;
+      }
+
+      .project-content-item {
+        color: var(--text-700);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+      }
+
+      .evaluation-wrapper {
+        margin-top: 10px;
+        margin-left: 40px;
+      }
+
+      .education {
+        margin-bottom: 20px;
+      }
+
+      .evaluation-item {
+        font-size: 14px;
+        line-height: 28px;
+        color: var(--text-800);
+      }
+
+      .education-list {
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+      .education-list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 25px;
+      }
+
+      .university {
+        font-size: 18px;
+        line-height: 2;
+        font-weight: 700;
+        color: var(--text-800);
+        text-decoration: none;
+      }
+
+      .major {
+        font-size: 16px;
+        line-height: 1.15;
+        color: var(--text-700);
+      }
+
+      .education-time {
+        font-size: 14px;
+        line-height: 1.15;
+        color: var(--text-500);
+      }
+
+      .space {
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+      }
+
+      .app-link {
+        color: var(--them-color-primary);
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      a.app-link:active {
+        color: var(--them-color-primary);
+      }
+
+      a.project-app-title {
+        color: #000;
+        text-decoration: none;
+      }
+
+      a.project-app-title:active {
+        color: #000;
+      }
+    </style>
     <style>
       @media print {
         .work-item {
@@ -99,12 +461,12 @@
             </div>
             <div class="work-time">2020.09 ~ 至今</div>
           </div>
-          <div class="teches">
-            <span class="tech">React</span>
-            <span class="tech">React Native</span>
-            <span class="tech">Node.js</span>
-            <span class="tech">Typescript</span>
-          </div>
+          <ol class="teches">
+            <li class="tech">React</li>
+            <li class="tech">React Native</li>
+            <li class="tech">Node.js</li>
+            <li class="tech">Typescript</li>
+          </ol>
         </div>
         <div class="project">
           <h2 class="project-name">即时通讯</h2>
@@ -114,10 +476,9 @@
               >的设计/开发。以插件化的形式解耦<span class="space">SDK</span
               >各个功能模块, 使<span class="space">SDK</span
               >的使用/维护更加灵活方便。
-             
             </li>
             <li class="project-content-item">
-             使用mono repo 的方式对 SDK 各个仓库代码进行管理, 提升发布效率。
+              使用mono repo 的方式对 SDK 各个仓库代码进行管理, 提升发布效率。
             </li>
             <li class="project-content-item">
               完成基于<span class="space">SDK</span>的<span class="space"
@@ -128,11 +489,9 @@
               为
               <a
                 href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E9%9B%86%E9%87%87/id1488054864"
-                class="app-link"
                 >云筑集采</a
               >/<a
                 href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E8%9C%9C%E8%9C%82/id1604733781"
-                class="app-link"
                 >云筑蜜蜂</a
               >
               两款<span class="space">App</span>及<span class="space">Web</span
@@ -197,7 +556,12 @@
         <div class="company">
           <div class="company-wrapper">
             <div>
-              <a class="company-name" href="https://zsmarter.com/" hreflang="zh-cn">中天智慧科技有限公司</a>
+              <a
+                class="company-name"
+                href="https://zsmarter.com/"
+                hreflang="zh-cn"
+                >中天智慧科技有限公司</a
+              >
               <div class="job-name">前端开发工程师</div>
             </div>
             <div class="work-time">2018.03 ~ 2020.08</div>
@@ -236,7 +600,12 @@
         <div class="company">
           <div class="company-wrapper">
             <div>
-              <a class="company-name" href="http://www.northking.net/" hreflang="zh-cn">京北方信息技术</a>
+              <a
+                class="company-name"
+                href="http://www.northking.net/"
+                hreflang="zh-cn"
+                >京北方信息技术</a
+              >
               <div class="job-name">前端开发工程师</div>
             </div>
             <div class="work-time">2016.05 ~ 2018.02</div>
@@ -272,7 +641,12 @@
         <div class="company">
           <div class="company-wrapper">
             <div>
-              <a class="company-name" href="https://www.chinasofti.com" hreflang="zh-cn">中软国际</a>
+              <a
+                class="company-name"
+                href="https://www.chinasofti.com"
+                hreflang="zh-cn"
+                >中软国际</a
+              >
               <div class="job-name">前端开发工程师</div>
             </div>
             <div class="work-time">2015.03 ~ 2016.04</div>

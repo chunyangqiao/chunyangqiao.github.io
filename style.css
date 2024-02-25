@@ -38,7 +38,7 @@ html {
   line-height: 24px;
 }
 #profile .email {
-  color: var(--them-color-primary);
+  color: var(--text-color-primary);
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
