@@ -279,6 +279,12 @@
         color: var(--text-800);
       }
 
+      .responsibilities {
+        font-size: 10px;
+        line-height: 14px;
+        color: #7e8288;
+      }
+
       .teches {
         display: flex;
         align-items: center;
@@ -307,6 +313,14 @@
         line-height: 21px;
         height: 21px;
         margin-bottom: 5px;
+      }
+
+      .project-intro {
+        font-size: 12px;
+        line-height: 18px;
+        color: #7e8288;
+        margin-top: 4px;
+        margin-bottom: 8px;
       }
 
       .project-content {
@@ -394,11 +408,11 @@
       }
     </style>
     <style>
-      @media print {
+      /* @media print {
         .work-item {
           page-break-inside: avoid;
         }
-      }
+      } */
     </style>
   </head>
   <body>
@@ -458,16 +472,21 @@
               <a class="company-name" href="https://www.yzw.cn" hreflang="zh-cn"
                 >中建电子商务有限责任公司</a
               >
-              <div class="job-name">移动端开发工程师</div>
+              <div class="job-name">
+                <span style="padding-right: 8px">大数据业务前端负责人</span>
+                <span class="responsibilities"
+                  >(基础组件研发、业务系统对接、前端技术方案设计、产品方案沟通、大数据多系统上线排期协调、外包人员研发任务分配)</span
+                >
+              </div>
             </div>
             <div class="work-time">2020.09 - 至今</div>
           </div>
           <ol class="teches">
             <li class="tech">React</li>
-            <li class="tech">React Native</li>
-            <li class="tech">Node.js</li>
             <li class="tech">Typescript</li>
             <li class="tech">ECharts</li>
+            <li class="tech">React Native</li>
+            <li class="tech">Nest.js</li>
           </ol>
         </div>
         <div class="project">
@@ -479,34 +498,73 @@
               >采购大模型</a
             >
           </h2>
+          <div class="project-intro">
+            简介: 基于近10年来沉淀的海量数据,
+            实现对话式寻源，智能推荐最优供应商、
+            为用户提供快捷价格参考和行情分析、回答任何建筑专业知识提问、根据上传的招标文件智能生成招标文件。
+          </div>
           <ul class="project-content">
             <li class="project-content-item">
-              处理流式SSE, 实现消息的实时渲染。
+              大模型前端技术选型 / 方案设计。
             </li>
             <li class="project-content-item">
-              集成react-markdown渲染大模型消息片段 / 渲染约定业务类型的消息片段
+              使用zustand进行对问答内容、历史问答内容、问答中组件是否可交互等系列状态进行统一管理。提升多端开发效率。
             </li>
             <li class="project-content-item">
-              <a href="https://ai.yzw.cn" hreflang="zh-cn">大模型官网</a>开发
+              封装通用的渲染流程，为小程序、H5、App、PC端提供统一的渲染流程逻辑。
+            </li>
+            <li class="project-content-item">
+              集成 react-markdown渲染大模型消息片段 / 渲染约定业务类型的消息片段
+              / react-virtuoso处理消息列表
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h2 class="project-name">
+            <a
+              href="https://aigo.yzw.cn"
+              hreflang="zh-cn"
+              class="project-app-title"
+              >智能分析平台</a
+            >
+          </h2>
+          <div class="project-intro">
+            简介: BI平台，为客户提供数据报表、数据可视化、自助取数据等功能。
+          </div>
+          <ul class="project-content">
+            <li class="project-content-item">
+              技术选型、和产品、业务沟通具体业务诉求，拉齐系统目标。
+            </li>
+            <li class="project-content-item">
+              面对海量的报表需求，提出通过集成低代码SDK，实现低代码拖拽式搭建报表。提升
+              50% 的研发效率，同时大大降低业务变更带来的维护成本。
+            </li>
+            <li class="project-content-item">
+              基于eCharts，封装了通用的Bar、Line、Pie、Map等图表组件，提升图表复用率。
+            </li>
+            <li class="project-content-item">
+              面对低代码组件上传、打包、发布、流程繁琐等问题，通过编写低代码CLI，实现一键上传、打包、发布。降低了低代码组件的开发成本。
             </li>
           </ul>
         </div>
         <div class="project">
           <h2 class="project-name">即时通讯</h2>
+          <div class="project-intro">
+            简介:
+            即时通讯SDK，提供单聊、群聊、消息已读回执、自定义消息等功能。服务于云筑集采App、云筑蜜蜂App、找供应商、服务市场等Web页面。
+          </div>
           <ul class="project-content">
             <li class="project-content-item">
-              负责即时通讯中<span class="space">SDK</span
-              >的设计/开发。以插件化的形式解耦<span class="space">SDK</span
-              >各个功能模块, 使<span class="space">SDK</span
-              >的使用/维护更加灵活方便。
+              负责即时通讯中SDK的设计/开发。以插件化的形式解耦各个功能模块,使SDK的使用/维护更加灵活方便。
             </li>
             <li class="project-content-item">
               使用mono repo 的方式对 SDK 各个仓库代码进行管理, 提升发布效率。
             </li>
             <li class="project-content-item">
-              完成基于<span class="space">SDK</span>的<span class="space"
-                >React Native</span
-              >组件和<span class="space">Web</span>端组件库的建设。
+              完成基于SDK的React Native组件和Web端组件库的建设。
+            </li>
+            <li class="project-content-item">
+              使用dumi搭建产品站点，内容涵盖组件使用、SDK集成、服务端对接等。降低开发者集成SDK的成本。
             </li>
             <li class="project-content-item">
               为
@@ -524,52 +582,17 @@
         </div>
         <div class="project">
           <h2 class="project-name">移动端热更新</h2>
+          <div class="project-intro">简介: 基于RN的移动端热更新解决方案</div>
           <ul class="project-content">
             <li class="project-content-item">热更新方案/流程设计</li>
             <li class="project-content-item">
-              编写<span class="space">Babel</span
-              >插件对每次更新包代码进行模块提取/解析/对比
+              编写Babel插件对每次更新包代码进行模块提取/解析/对比
             </li>
             <li class="project-content-item">
               热更新服务端开发。提供代码包上传，模块分析/提取 以及代码下载等功能
             </li>
             <li class="project-content-item">
-              在<span class="space">Gitlab-CI</span>中集成热更新模块的打包及上传
-            </li>
-          </ul>
-        </div>
-        <div class="project">
-          <h2 class="project-name">RN组件库</h2>
-          <ul class="project-content">
-            <li class="project-content-item">组件开发/单元测试</li>
-            <li class="project-content-item">
-              编写<span class="space">CLI</span>
-              工具,方便日常工作中模块的快速开发
-            </li>
-          </ul>
-        </div>
-        <div class="project">
-          <h2 class="project-name">低代码CLI</h2>
-          <ul class="project-content">
-            <li class="project-content-item">使用commander开发低代码CLI</li>
-            <li class="project-content-item">组件创建/打包/上传等功能</li>
-          </ul>
-        </div>
-        <div class="project">
-          <h2 class="project-name">
-            <a
-              href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E9%9B%86%E9%87%87/id1488054864"
-              class="project-app-title"
-              >云筑集采</a
-            >/<a
-              href="https://apps.apple.com/cn/app/%E4%BA%91%E7%AD%91%E8%9C%9C%E8%9C%82/id1604733781"
-              class="project-app-title"
-              >云筑蜜蜂</a
-            >
-          </h2>
-          <ul class="project-content">
-            <li class="project-content-item">
-              两款<span class="space">App</span> 的日常业务开发
+              在Gitlab-CI中集成热更新模块的打包及上传
             </li>
           </ul>
         </div>
@@ -585,24 +608,28 @@
                 hreflang="zh-cn"
                 >中天智慧科技有限公司</a
               >
-              <div class="job-name">前端开发工程师</div>
+              <div class="job-name">
+                <span>前端开发工程师</span>
+                <span class="responsibilities"
+                  >(电商类H5前端研发、商户平台优化改造)</span
+                >
+              </div>
             </div>
             <div class="work-time">2018.03 - 2020.08</div>
           </div>
           <div class="teches">
             <span class="tech">React</span>
-            <span class="tech">Node.js</span>
           </div>
         </div>
         <div class="project">
           <div class="project-name">天府商城</div>
+          <div class="project-intro"></div>
           <ul class="project-content">
             <li class="project-content-item">
-              商品/订单/支付等多个2C模块的前端业务开发
+              以BFF的形式重构商城前端服务，将商城技术栈从JQuery迁移到React，大大降低了商城的研发和维护成本
             </li>
             <li class="project-content-item">
-              使用<span class="space">Webpack</span
-              >优化多页面中的资源重复引用的问题
+              使用 Webpack 优化多页面中的资源重复引用的问题，降低了首屏加载时间
             </li>
           </ul>
         </div>
@@ -610,10 +637,10 @@
           <div class="project-name">商户平台</div>
           <ul class="project-content">
             <li class="project-content-item">
-              商户结算/订单等多个模块的前端业务开发
+              使用模板的形式对商户装修功能进行改造，使商户装修功能更加灵活，降低了运营沟通的成本
             </li>
             <li class="project-content-item">
-              店铺装修模块进行改造升级,提高商户在装修时的用户体验
+              商户结算/订单等多个模块的前端业务开发
             </li>
           </ul>
         </div>
@@ -631,7 +658,7 @@
               >
               <div class="job-name">前端开发工程师</div>
             </div>
-            <div class="work-time">2016.05 - 2018.02</div>
+            <div class="work-time">2015.03 - 2018.02</div>
           </div>
           <div class="teches">
             <span class="tech">jQuery</span>
@@ -655,38 +682,6 @@
             </li>
             <li class="project-content-item">
               使用<span class="space">Gulp</span>对前端资源进行压缩、混淆处理
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- 中软 -->
-      <section class="work-item">
-        <div class="company">
-          <div class="company-wrapper">
-            <div>
-              <a
-                class="company-name"
-                href="https://www.chinasofti.com"
-                hreflang="zh-cn"
-                >中软国际</a
-              >
-              <div class="job-name">前端开发工程师</div>
-            </div>
-            <div class="work-time">2015.03 - 2016.04</div>
-          </div>
-          <div class="teches">
-            <span class="tech">AngularJS</span>
-            <span class="tech">D3.js</span>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-name">ONOS网络控制器</div>
-          <ul class="project-content">
-            <li class="project-content-item">
-              可视化网络流量数据大屏的前端开发
-            </li>
-            <li class="project-content-item">
-              网络流量调优对比相关前端页面开发
             </li>
           </ul>
         </div>
